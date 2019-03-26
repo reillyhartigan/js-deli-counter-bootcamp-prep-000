@@ -10,7 +10,7 @@ function nowServing(line) {
 };
 function currentLine(line) {
   if (!line.length) {
-  return  "The line is currently empty"
+  return  "The line is currently empty."
   }
   for (var i = 0 ; i < line.length; i++) {
     line[i]
