@@ -8,12 +8,13 @@ function nowServing(line) {
   }
   return `Currently serving ${line.shift()}.`
 };
+const numAndNameArr = [];
 function currentLine(line) {
   if (!line.length) {
   return  "The line is currently empty."
   }
   for (var i = 0 ; i < line.length; i++) {
-    line[i]
+    numAndNameArr.push(`${i + 1}. ${line[i]}`)
   }
-  return `The line is currently: ${numAndArr.join(', ')}`
+  return `The line is currently: ${numAndNameArr.join(', ')}`
 };
